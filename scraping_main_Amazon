@@ -1,0 +1,14 @@
+import re
+from colorama import Fore
+import requests
+
+class scrapting_main_Amazon:
+    def __init__(self,type_product) :
+        self.type = type_product
+    
+    def seeProduct(self):
+        if(self.type == "Tecnology"):
+            self.take_product_tecnology()
+    
+    def take_product_tecnology(self):
+        url = ""
